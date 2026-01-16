@@ -49,6 +49,38 @@ factwise-python/
 ```
 
 ## HOW TO RUN
+Follow these steps to set up and execute the project locally:
 
-Run python main.py code in the terminal
+## 1. Prerequisites
+Ensure you have Python 3.8+ installed.
+
+This project uses only standard Python libraries (json, os, uuid, datetime), so no external pip installations are required.
+
+## 2. Setup (Optional)
+It is recommended to use a virtual environment to keep your global Python environment clean:
+Create a virtual environment
+
+```text
+python -m venv venv
+```
+
+Activate it (Windows)
+
+```text
+.\venv\Scripts\activate
+```
+
+Activate it (macOS/Linux)
+
+```text
+source venv/bin/activate
+```
+
+## 3. Execution
+Run the main integration test script from the root directory:
+
+```text
+python main.py
+```
+
 
