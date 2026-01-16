@@ -1,0 +1,16 @@
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+
+# --- Editor Specific ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Project Specific Data ---
+db/*.json
+
+# We ignore the generated reports
+out/*.txt
