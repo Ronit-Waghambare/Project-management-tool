@@ -16,18 +16,13 @@ A robust back-end implementation for managing **Users**, **Teams**, and **Projec
 
 ## 🛠️ Technical Rationale
 
-### **1. Data Persistence**
-I chose **JSON files** for data storage to align with the project's requirement for JSON-string inputs and outputs. This approach allows for:
-* **Zero-Setup**: No external database installation is required; the project is fully portable.
-* **Transparency**: Data can be manually inspected and verified within the `db/` folder.
-
-### **2. Architecture**
+### **1. Architecture**
 The system is built using a **Manager-based pattern**:
 * `UserManager`: Handles user lifecycles and team lookups.
 * `TeamManager`: Manages team compositions and membership constraints.
 * `BoardManager`: Controls task state, board status, and report generation.
 
-### **3. Constraint Enforcement**
+### **2. Constraint Enforcement**
 To ensure data integrity, the system enforces the following:
 * **Uniqueness**: User names, Team names, and Board names (per team) must be unique.
 * **Status Guards**: Tasks can only be added to `OPEN` boards.
@@ -56,3 +51,4 @@ factwise-python/
 ## HOW TO RUN
 
 Run python main.py code in the terminal
+
